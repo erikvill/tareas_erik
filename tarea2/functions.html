@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Funciones</title>
+
+<script type="text/javascript" charset="utf-8">
+	
+	function suma(b1,b2){
+		alert(b1*b2);
+	}
+	
+	var colores=["#068892", "#FF99CC", "#0099FF"];
+
+	function cambiaFondo(){
+		aleatorio = Math.floor(Math.random() * colores.length);
+		
+		document.body.style.backgroundColor = colores[aleatorio];
+	};
+	
+	function escribirPais(){
+		document.getElementById("textoPais").innerHTML=document.getElementById("pais").value;
+	}
+	
+</script>
+
+	<style type="text/css" media="screen">
+		#textoPais
+		{
+			font-size: 100px;
+			text-align: center;
+		}
+	</style>
+	
+</head>
+<body>
+	
+	<!-- <input id="cambiaFondo" type="button" value="Cambiar El Fondo" onclick="cambiaFondo();" />
+	-->
+	
+	<input type="text" name="pais" id="pais">
+	
+	<script type="text/javascript" charset="utf-8">
+		cambiaFondo();
+		
+		
+		document.getElementById("pais").value = "China";
+		
+		<input id="botonpais" type="button" value="Va" onclick="escribirPais();" />
+		
+		<div id="textoPais"></div>
+		
+	</script>
+	
+</body>
+</html>
