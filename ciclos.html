@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Operaciones</title>
+
+	<script type="text/javascript" charset="utf-8">
+		cars = ["BMW", "Volvo", "Saab", "Ford"];
+	</script>
+	
+	<style type="text/css" media="screen">
+	.marca 
+	{
+	float: left;
+	width: 100px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	background: #f4f4f4;
+	margin:5px;
+	border:1px solid black;	
+	}
+	</style>
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+	
+<button onclick="myFunction()">Ejecutar</button>
+
+	<p id="demo"></p>
+	
+<script>
+
+function myFunction(){	
+	var text = "";
+	var i = 0;
+	
+	while (i < 10) {
+		text += "" + i;
+		i++;
+	};
+	document.getElementById("demo").innerHTML = text;
+}
+
+</script>	
+
+</body>
+</html>
