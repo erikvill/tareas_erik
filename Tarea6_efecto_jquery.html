@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<style type="text/css" media="screen">
+	#rojo{
+		width: 200px;
+		height:200px;
+		background-color:red;
+		display:none;
+	}
+	
+	#azul{
+		width: 200px;
+		height:200px;
+		background-color:blue;
+		display:none;
+	}
+	#verde{
+		width: 200px;
+		height:200px;
+		background-color:green;
+		
+	}
+	#negro{
+		width: 200px;
+		height:200px;
+		background-color:black;
+		
+	}
+</style>
+
+<script type="application/javascript" charset:"utf-8">
+	function aparece(){
+		$("#rojo").fadeIn(1000, function (){
+		$("#azul").fadeIn(1000);}
+		);
+	};
+	
+	function desaparece(){
+		$("#rojo").fadeOut(1000, function (){
+		$("#azul").fadeOut(1000);}
+		);
+	};
+	
+	function toggle(){
+		$("#verde").fadeToggle(1000);
+	};
+	function slide(){
+		$("#negro").slideToggle(1000);
+	};
+
+	</script>
+
+<title>JQuery 1</title>
+</head>
+
+<body>
+	<input type="button" onClick="aparece();" value="Aparece"/>
+	<input type="button" onClick="desaparece();" value="Desaparece"/>
+    <input type="button" onClick="toggle();" value="Toggle"/>
+    <input type="button" onClick="slide();" value="Slide"/>
+    <div class="clear"></div>
+    <div id="azul"></div>
+    <div id="rojo"></div>
+    <div id="verde"></div>
+    <div id="negro"></div>
+    <div id="naranja"></div>
+</body>
+</html>
